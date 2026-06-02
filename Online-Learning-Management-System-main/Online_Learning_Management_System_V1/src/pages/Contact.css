@@ -1,0 +1,150 @@
+.contact-page {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.contact-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+}
+
+.contact-header h1 {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.contact-header .subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 3rem;
+}
+
+.contact-form-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+  padding: 2.5rem;
+}
+
+.contact-form-card h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.form-textarea {
+  height: 140px;
+  resize: none;
+}
+
+.submit-contact-btn {
+  margin-top: 1.5rem;
+  padding: 0.9rem;
+  font-size: 1.05rem;
+}
+
+/* Contact Details Side */
+.contact-details-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.coordinates-card {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+}
+
+.coordinates-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.5rem;
+}
+
+.coordinate-node {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.coordinate-node:last-child {
+  margin-bottom: 0;
+}
+
+.node-icon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 0.25rem;
+}
+
+.coordinate-node h5 {
+  font-size: 0.95rem;
+  font-weight: 750;
+  margin-bottom: 0.15rem;
+}
+
+.coordinate-node p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Map Mock Card */
+.mock-map-card {
+  height: 220px;
+  background-color: #e2e8f0;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: var(--text-muted);
+  font-weight: 700;
+  font-size: 0.9rem;
+  /* Visual mock map grid pattern */
+  background-image: radial-gradient(var(--border) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.mock-map-dot {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: var(--primary);
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 0 6px rgba(79, 70, 229, 0.2);
+  top: 40%;
+  left: 55%;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.9); opacity: 0.6; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(0.9); opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

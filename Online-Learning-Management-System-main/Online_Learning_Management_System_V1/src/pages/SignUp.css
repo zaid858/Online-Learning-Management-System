@@ -1,0 +1,8 @@
+.signup-card {
+  max-width: 520px;
+}
+
+.signup-logo-icon {
+  background: var(--secondary-gradient);
+  box-shadow: 0 4px 10px rgba(6, 182, 212, 0.25);
+}

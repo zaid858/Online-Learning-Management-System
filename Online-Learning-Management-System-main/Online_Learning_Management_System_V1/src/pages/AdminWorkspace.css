@@ -1,0 +1,305 @@
+.admin-page {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+}
+
+.admin-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+}
+
+.admin-header h1 {
+  margin-top: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.admin-header .subtitle {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+}
+
+/* Tabs Bar */
+.admin-tabs-nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+
+.admin-tab-btn {
+  padding: 0.85rem 1.5rem;
+  background: none;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all var(--transition-fast);
+  outline: none;
+  white-space: nowrap;
+}
+
+.admin-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.admin-tab-btn.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+/* Panel body */
+.admin-panel-body {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 2.25rem;
+}
+
+.admin-panel-body h2 {
+  font-size: 1.35rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Metrics Cards */
+.admin-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.admin-metric-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.admin-metric-card strong {
+  font-size: 2.25rem;
+  color: var(--dark);
+  line-height: 1.2;
+}
+
+.admin-metric-card span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.m-icon {
+  color: var(--primary);
+}
+
+.system-health-block {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.system-health-block h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.system-health-block ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: 0.95rem;
+}
+
+/* Form Grid */
+.form-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Users Table styles */
+.admin-table-container {
+  overflow-x: auto;
+  margin-top: 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+}
+
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.admin-users-table th {
+  background-color: var(--bg-light);
+  padding: 1rem;
+  font-weight: 750;
+  color: var(--dark);
+  border-bottom: 1px solid var(--border);
+}
+
+.admin-users-table td {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text-main);
+}
+
+.role-cell-select {
+  padding: 0.35rem 0.65rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background-color: var(--bg-card);
+  color: var(--text-main);
+  outline: none;
+  cursor: pointer;
+}
+
+.status-cell-badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.status-cell-badge.active {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--success);
+}
+
+.status-cell-badge.blocked {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+}
+
+.block-toggle-btn {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.75rem;
+}
+
+/* Tickets styles */
+.admin-tickets-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.admin-ticket-card {
+  background-color: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.admin-ticket-card.resolved {
+  opacity: 0.75;
+  border-color: var(--border);
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.ticket-header h3 {
+  font-size: 1.15rem;
+}
+
+.ticket-status-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.ticket-status-tag.resolved {
+  background-color: var(--success);
+  color: var(--text-white);
+}
+
+.ticket-status-tag.pending {
+  background-color: var(--accent);
+  color: var(--text-white);
+}
+
+.ticket-message-text {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.ticket-actions-row {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.delete-ticket-btn:hover {
+  background-color: rgba(239, 68, 68, 0.1);
+  color: var(--error);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+/* Activity Logs Terminal */
+.terminal-logs-screen {
+  background-color: #020617;
+  color: #10b981;
+  font-family: monospace;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  height: 350px;
+  overflow-y: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.terminal-line {
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+.terminal-time {
+  color: #64748b;
+  margin-right: 0.75rem;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+  .admin-metrics-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .form-grid-3 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

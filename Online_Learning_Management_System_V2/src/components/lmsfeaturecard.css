@@ -1,0 +1,55 @@
+.feature-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.25rem 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(79, 70, 229, 0.3);
+}
+
+.feature-icon-wrapper {
+  background: rgba(79, 70, 229, 0.08);
+  color: var(--primary);
+  padding: 0.85rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  background: var(--primary-gradient);
+  color: var(--text-white);
+  transform: scale(1.05) rotate(5deg);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.25);
+}
+
+.feature-badge {
+  margin-bottom: 0.75rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--dark);
+}
+
+.feature-desc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
